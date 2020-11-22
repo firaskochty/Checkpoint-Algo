@@ -1,0 +1,21 @@
+VAR
+	i : INTEGER := 0; //nombre de c
+	k : INTEGER := 0; // nombre de v 
+	j : INTEGER := 1; // nombre de m
+
+	str : String := "Firas Kochty.";
+
+BEGIN
+	WHILE ( str[i] not '.' ) DO
+		i := i+1 ;
+		IF ( str[i] = ' ' ) THEN
+			j := j+1;
+		ELSE_IF ( str[i] = 'a' or str[i] = 'e' or str[i] = 'i' or str[i] = 'o' or str[i] = 'u' or str[i] = 'y'  ) THEN 
+			k := k+1;
+		END_IF
+	END_WHILE
+
+	Write(i) 
+	Write(k)
+	Write(j)
+END 
